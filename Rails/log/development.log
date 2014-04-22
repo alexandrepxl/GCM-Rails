@@ -4228,3 +4228,301 @@ Processing by Api::V1::DevicesController#test as HTML
 This is a test {"regId"=>"APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng", "action"=>"test", "controller"=>"api/v1/devices"}
   [1m[35mDevice Load (0.2ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng'  ORDER BY "devices"."id" ASC LIMIT 1
 Completed 200 OK in 760ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng" for 192.168.0.15 at 2014-04-22 14:21:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng"}
+This is a test {"regId"=>"APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[35mDevice Load (0.1ms)[0m  SELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng'  ORDER BY "devices"."id" ASC LIMIT 1
+Completed 200 OK in 1254ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 14:21:37 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/alexandre/.rvm/gems/ruby-1.9.3-p327/gems/railties-4.1.0.beta1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/push/broadcast" for 127.0.0.1 at 2014-04-22 14:21:42 -0300
+Processing by PushController#broadcast as HTML
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+  Rendered push/broadcast.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 907ms (Views: 93.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:43 -0300
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-04-22 14:21:50 -0300
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aQSN7WP7MwZeZp4RJWFOrNyXNiSXtYDtbJ0sBh11p1g=", "q"=>"Alexandre Borges de Melo", "commit"=>"Broadcast"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 791ms (Views: 10.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 14:21:51 -0300
+
+
+Started GET "/api/v1/devices/test?regId=APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg" for 192.168.0.18 at 2014-04-22 14:23:39 -0300
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg"}
+This is a test {"regId"=>"APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (20.9ms)[0m  [1mINSERT INTO "devices" ("created_at", "regid", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-04-22 17:23:39.902213"], ["regid", "APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg"], ["updated_at", "2014-04-22 17:23:39.902213"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Completed 200 OK in 1232ms (Views: 0.3ms | ActiveRecord: 23.1ms)
+
+
+Started GET "/api/v1/devices/test" for 192.168.0.18 at 2014-04-22 14:23:59 -0300
+Processing by Api::V1::DevicesController#test as HTML
+This is a test {"action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" IS NULL  ORDER BY "devices"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "devices" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2014-04-22 17:23:59.321540"], ["updated_at", "2014-04-22 17:23:59.321540"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Completed 500 Internal Server Error in 8ms
+
+RuntimeError (device_tokens needs to be either a hash or string):
+  app/controllers/api/v1/devices_controller.rb:25:in `test'
+
+
+  Rendered /Users/alexandre/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/alexandre/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/alexandre/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/alexandre/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-4.1.0.beta1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/api/v1/devices/test?regId=APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg" for 192.168.0.18 at 2014-04-22 14:26:20 -0300
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg"}
+This is a test {"regId"=>"APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bFmYfmmntftONxPuiXMmLgI4KTrE-4c0b9_I55uIsqCg2xt7J_BG2K3EqVqBVL3zCOQfMgdISGMYef-eJsIzPmZJH2hfrUNj3jyZBvs4T6xv0NMUoB3MOYjEu4rWgCHzf0Cyfp6_hB8aOpgt9mwL1NxNAfCrg'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1110ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-04-22 14:28:59 -0300
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aQSN7WP7MwZeZp4RJWFOrNyXNiSXtYDtbJ0sBh11p1g=", "q"=>"Vai que dá ", "commit"=>"Broadcast"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 811ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 14:29:00 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-04-22 15:17:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/alexandre/.rvm/gems/ruby-1.9.3-p327/gems/railties-4.1.0.beta1/lib/rails/templates/rails/welcome/index.html.erb (14.3ms)
+Completed 200 OK in 255ms (Views: 197.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/push/broadcast" for 127.0.0.1 at 2014-04-22 15:17:20 -0300
+Processing by PushController#broadcast as HTML
+  [1m[35mDevice Load (0.4ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1999ms (Views: 605.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 15:17:22 -0300
+
+
+Started GET "/api/v1/devices/test?regId=APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng" for 192.168.0.15 at 2014-04-22 15:18:15 -0300
+Processing by Api::V1::DevicesController#test as HTML
+  Parameters: {"regId"=>"APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng"}
+This is a test {"regId"=>"APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng", "action"=>"test", "controller"=>"api/v1/devices"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT  "devices".* FROM "devices"  WHERE "devices"."regid" = 'APA91bEnyMlvQePpbPXQLk6r4uj_wjFXJD_lBPMZM7o5EPQiAz2otUV5iYvkAfRnJaH-i4X95fhu-oieGtWrhL30_jjxdTF-l-j2bdDUVj7JmPEvXWut1w1Yf9Hd9oiypOVmm1k6NrCZYA-YIafCeZfvt-NfO9C6Ng'  ORDER BY "devices"."id" ASC LIMIT 1[0m
+Completed 200 OK in 787ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-04-22 15:18:50 -0300
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/5AoWdvjNLGeBEUIg8N/fYdsm8d7s1uSlpcG1TBget4=", "q"=>"Alexandre Borges de Melo", "commit"=>"Broadcast"}
+  [1m[35mDevice Load (0.2ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 796ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 15:18:51 -0300
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/5AoWdvjNLGeBEUIg8N/fYdsm8d7s1uSlpcG1TBget4=", "q"=>"android volley ", "commit"=>"Broadcast"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 783ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 15:19:07 -0300
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-04-22 15:21:18 -0300
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/5AoWdvjNLGeBEUIg8N/fYdsm8d7s1uSlpcG1TBget4=", "q"=>"funciona", "commit"=>"Broadcast"}
+  [1m[35mDevice Load (0.3ms)[0m  SELECT distinct regid FROM "devices"
+  Rendered push/broadcast.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1127ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:19 -0300
+
+
+Started PUT "/push/broadcast" for 127.0.0.1 at 2014-04-22 15:21:27 -0300
+Processing by PushController#broadcast as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/5AoWdvjNLGeBEUIg8N/fYdsm8d7s1uSlpcG1TBget4=", "q"=>"funciona mesmo", "commit"=>"Broadcast"}
+  [1m[36mDevice Load (0.2ms)[0m  [1mSELECT distinct regid FROM "devices"[0m
+  Rendered push/broadcast.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 779ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300
+
+
+Started GET "/assets/push.css?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300
+
+
+Started GET "/assets/push.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-04-22 15:21:28 -0300

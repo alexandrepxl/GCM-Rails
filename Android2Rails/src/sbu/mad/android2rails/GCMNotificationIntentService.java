@@ -47,7 +47,7 @@ public class GCMNotificationIntentService extends IntentService {
 				
 			} else if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
 
-				for (int i = 0; i < 3; i++) {
+				for (int i = 0; i < 1; i++) {
 					Log.i(TAG, "Working... " + (i + 1) + "/5 @ " + SystemClock.elapsedRealtime());
 					try {
 						Thread.sleep(5000);
